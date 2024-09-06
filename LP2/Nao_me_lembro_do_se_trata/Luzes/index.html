@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta nam="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function trocaImagem() {
+        var elemento=document.getElementById("myimage");
+        if (elemento.src.match("bulbon")) {
+        elemento.src="pic_bulboff.png";
+        } else {
+        elemento.src="pic_bulbon.png";
+        }
+        }
+        </script>
+        <p><img id="myimage" onclick="trocaImagem()"
+        src="pic_bulboff.png" width=100 height=180></p>
+        <p>Clique na lâmpada para ligar/desligar a luz</p>
+</body>
+
+</html>
